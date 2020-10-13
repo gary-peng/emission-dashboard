@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+        <link href="style.css" rel="stylesheet">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -16,9 +17,15 @@
     <body>
         <body onload="getData()">
 
-        <p>VOC Concentration (ppb): <span id="voc">Device is off</span></p>
-        <p>Risk Level: <span id="risk">Device is off</span></p>
-        <p>Action: <span id="action">Device is off</span></p>
+        <div class="container h-100 align-items-center justify-content-center">
+            <div class="d-flex h-100 align-items-center justify-content-center">
+                <div>
+                    <h3>VOC Concentration (ppb): <span id="voc">Device is off</span></h3>
+                    <h3>Risk Level: <span id="risk">Device is off</span></h3>
+                    <h3>Action: <span id="action">Device is off</span></h3>
+                </div>
+            </div>
+        </div>
 
         <script src="fetch-data.js"></script>
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
