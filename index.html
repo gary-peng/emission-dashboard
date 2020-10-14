@@ -5,29 +5,33 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/loading-bar.css"/>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
         <title>Emission Monitor</title>
-
-
     </head>
 
     <body>
         <body onload="getData()">
 
-        <div class="container h-100 align-items-center justify-content-center">
-            <div class="d-flex h-100 align-items-center justify-content-center">
-                <div>
-                    <h3>VOC Concentration (ppb): <span id="voc">Device is off</span></h3>
-                    <h3>Risk Level: <span id="risk">Device is off</span></h3>
-                    <h3>Action: <span id="action">Device is off</span></h3>
-                </div>
+        <div class="container h-100">
+            <div class="row h-50 text-center align-items-center">
+            <div class="col-4 offset-4">
+                <div class="myBar label-center w-100 h-100"></div>
             </div>
         </div>
 
-        <script src="fetch-data.js"></script>
+        <div class="row h-50 text-center align-items-center">
+            <div class="col-8 offset-2">
+                <p>Risk Level: <span id="risk">offline</span></p>
+                <p><span id="action"></span></p>
+            </div>
+        </div>
+
+        <script src="js/fetch-data.js"></script>
+        <script type="text/javascript" src="js/loading-bar.js"></script>
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

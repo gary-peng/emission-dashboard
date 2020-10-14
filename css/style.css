@@ -1,0 +1,25 @@
+html, body {
+    height: 100%;
+    background: #29D89B;
+    background: -webkit-radial-gradient(top left, #29D89B, #177B58);
+    background: -moz-radial-gradient(top left, #29D89B, #177B58);
+    background: radial-gradient(to bottom right, #29D89B, #177B58);
+}
+
+p {
+    color: white;
+    font-size: 2vw;
+    font-family: "Space Mono",monospace,"HelveticaNeue",Helvetica,Arial,sans-serif;
+}
+
+.ldBar path.mainline {
+    stroke-width: 5;
+    stroke: #FFFFFF;
+    stroke-linecap: round;
+}
+
+.ldBar-label {
+    color: #FFFFFF;
+    font-size: 2vw;
+    font-family: "Space Mono",monospace,"HelveticaNeue",Helvetica,Arial,sans-serif;
+}

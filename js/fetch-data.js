@@ -5,16 +5,25 @@ var pullVoc;
 var pullRisk;
 var pullAction;
 
+var bar;
+
 function getData() {
     pullVoc = setInterval(getVoc, 1000);
     pullRisk = setInterval(getRisk, 1000);
     pullAction = setInterval(getAction, 1000);
+
+    bar = new ldBar(".myBar", {
+        "preset": "fan"
+    });
 }
 
 function getVoc() {
     var requestURL = "https://api.particle.io/v1/devices/" +deviceID + "/voc/?access_token=" + accessToken;
     $.getJSON(requestURL, function(json) {
-        $("#voc").text(json.result);
+        bar.set(
+            json.result,
+            false
+        );
     });
 }
 
