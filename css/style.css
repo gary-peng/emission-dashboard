@@ -9,7 +9,7 @@ html, body {
 p {
     color: white;
     font-size: 2vw;
-    font-family: "Space Mono",monospace,"HelveticaNeue",Helvetica,Arial,sans-serif;
+    font-family: Arial,sans-serif;
 }
 
 .ldBar path.mainline {
